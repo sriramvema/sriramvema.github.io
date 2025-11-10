@@ -8,11 +8,12 @@
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 80px 12%;
+      padding: 100px 8%;
       background: #f9fafc;
       color: #222;
       line-height: 1.7;
     }
+
     header {
       display: flex;
       justify-content: space-between;
@@ -21,16 +22,18 @@
       top: 0;
       left: 0;
       width: 100%;
-      padding: 20px 12%;
+      padding: 20px 6%;
       background: #f9fafc;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       z-index: 100;
     }
+
     header h1 {
       font-size: 1.8rem;
       color: #111;
       margin: 0;
     }
+
     .top-btn {
       padding: 10px 20px;
       border: none;
@@ -41,24 +44,30 @@
       color: white;
       background-color: #444;
       transition: background 0.3s ease;
+      white-space: nowrap;
     }
+
     .top-btn:hover {
       background-color: #222;
     }
+
     h2 {
       font-size: 1.6rem;
       color: #333;
       margin-top: 60px;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 1.1rem;
       color: #444;
       margin-bottom: 25px;
     }
+
     .buttons {
       margin-bottom: 50px;
     }
+
     .btn {
       display: inline-block;
       padding: 12px 24px;
@@ -72,27 +81,34 @@
       background-color: #005eff;
       margin-right: 15px;
     }
+
     .btn:hover {
       background-color: #003fb8;
     }
+
     hr {
       border: none;
       border-top: 1px solid #ddd;
       margin: 40px 0;
     }
+
     @media (max-width: 768px) {
       body {
         padding: 100px 6%;
       }
+
       header {
         padding: 15px 6%;
       }
+
       header h1 {
         font-size: 1.4rem;
       }
+
       h2 {
         font-size: 1.3rem;
       }
+
       .btn {
         display: block;
         margin-bottom: 15px;
@@ -103,10 +119,7 @@
 <body>
   <header>
     <h1>Research</h1>
-    <div class="buttons">
-      <a href="index.html" class="top-btn">Back to Home</a>
-    </div>
-    
+    <a href="index.html" class="top-btn">Back to Home</a>
   </header>
 
   <main>
@@ -142,4 +155,3 @@
   </main>
 </body>
 </html>
-
