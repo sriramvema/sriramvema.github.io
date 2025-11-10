@@ -8,25 +8,28 @@
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 100px 12%;
       background: #f9fafc;
       color: #222;
+      line-height: 1.7;
+    }
+    header {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      min-height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 12%;
+      background: #f9fafc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 100;
     }
-    .container {
-      text-align: center;
-      max-width: 800px;
-      padding: 40px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+    header h1 {
+      font-size: 1.8rem;
+      color: #111;
+      margin: 0;
     }
     h2 {
       font-weight: 400;
@@ -35,14 +38,14 @@
     }
     p {
       font-size: 1.1rem;
-      line-height: 1.6;
-      margin: 20px 0 40px;
       color: #333;
+      margin: 20px 0 40px;
+      max-width: 900px;
     }
     .buttons {
       display: flex;
-      justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
     .btn {
       padding: 12px 24px;
@@ -58,12 +61,15 @@
     .btn:hover {
       background-color: #003fb8;
     }
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 20px;
+    @media (max-width: 768px) {
+      body {
+        padding: 100px 8%;
       }
-      h1 {
-        font-size: 2rem;
+      header {
+        padding: 15px 8%;
+      }
+      header h1 {
+        font-size: 1.5rem;
       }
       .buttons {
         flex-direction: column;
@@ -75,19 +81,23 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Hi, I'm Sriram</h1>
-    <h2>Software Developer | AI Engineer | Researcher</h2>
-    <p>
-      I'm currently pursuing a Master's of Science in Applied Machine Learning at the University of Maryland College Park. I am part of a research team under the mentorship of Dr. Manas Gaur at the University of
-      Maryland, Baltimore County, where I obtained my Bachelor's of Science in Computer Science degree. 
-    </p>
+  <header>
+    <h1>Sriram Vema</h1>
     <div class="buttons">
       <a href="research.html" class="btn">Research</a>
       <a href="projects.html" class="btn">Projects</a>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <h2>Software Developer | AI Engineer | Researcher</h2>
+    <p>
+      I'm currently pursuing a Master's of Science in Applied Machine Learning at the University of Maryland, College Park. 
+      I am part of a research team under the mentorship of Dr. Manas Gaur at the University of Maryland, Baltimore County, 
+      where I obtained my Bachelor's of Science in Computer Science degree. My work spans natural language processing, 
+      multi-agent systems, and large language model engineering — focusing on building scalable, interpretable AI systems 
+      that bridge reasoning and data-driven intelligence.
+    </p>
+  </main>
 </body>
 </html>
-
-
