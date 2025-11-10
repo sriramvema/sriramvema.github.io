@@ -3,49 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sri | Research</title>
+  <title>Sriram Vema | Research</title>
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 80px 12%;
       background: #f9fafc;
       color: #222;
+      line-height: 1.7;
+    }
+    header {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      min-height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 12%;
+      background: #f9fafc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 100;
     }
-    .container {
-      text-align: center;
-      max-width: 800px;
-      padding: 40px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    header h1 {
+      font-size: 1.8rem;
+      color: #111;
+      margin: 0;
     }
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
+    .top-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      background-color: #444;
+      transition: background 0.3s ease;
+    }
+    .top-btn:hover {
+      background-color: #222;
     }
     h2 {
-      font-weight: 400;
-      color: #666;
-      margin-top: 0;
+      font-size: 1.6rem;
+      color: #333;
+      margin-top: 60px;
+      margin-bottom: 10px;
     }
     p {
       font-size: 1.1rem;
-      line-height: 1.6;
-      margin: 20px 0 40px;
-      color: #333;
+      color: #444;
+      margin-bottom: 25px;
     }
     .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+      margin-bottom: 50px;
     }
     .btn {
+      display: inline-block;
       padding: 12px 24px;
       border: none;
       border-radius: 10px;
@@ -55,52 +70,73 @@
       text-decoration: none;
       color: white;
       background-color: #005eff;
+      margin-right: 15px;
     }
     .btn:hover {
       background-color: #003fb8;
     }
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 20px;
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 40px 0;
+    }
+    @media (max-width: 768px) {
+      body {
+        padding: 100px 6%;
       }
-      h1 {
-        font-size: 1.8rem;
+      header {
+        padding: 15px 6%;
       }
-      .buttons {
-        flex-direction: column;
+      header h1 {
+        font-size: 1.4rem;
+      }
+      h2 {
+        font-size: 1.3rem;
       }
       .btn {
-        width: 100%;
+        display: block;
+        margin-bottom: 15px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Research</h1>
-    <h2>Towards Robust Evaluation of Unlearning in LLMs via Data Transformations</h2>
-    <p>
-      My research focuses on designing and implementing multi-agent AI frameworks capable of reasoning 
-      over complex relational structures such as knowledge graphs. I investigate how language models 
-      can leverage graph embeddings, temporal data, and retrieval-augmented mechanisms to enhance 
-      contextual understanding and decision-making. This work contributes to scalable, interpretable, 
-      and adaptive AI systems for cybersecurity and enterprise analytics.
-    </p>
-    <div class="buttons">
-      <a href="research1.pdf" download class="btn">Download Paper (PDF)</a>
-    </div>
-    <h2>Can LLMs Obfuscate Code? A Systematic Analysis of Large Language Models into Assembly Code Obfuscation</h2>
-    <p>
-      My research focuses on designing and implementing multi-agent AI frameworks capable of reasoning 
-      over complex relational structures such as knowledge graphs. I investigate how language models 
-      can leverage graph embeddings, temporal data, and retrieval-augmented mechanisms to enhance 
-      contextual understanding and decision-making. This work contributes to scalable, interpretable, 
-      and adaptive AI systems for cybersecurity and enterprise analytics.
-    </p>
-    <div class="buttons">
-      <a href="research2.pdf" download class="btn">Download Paper (PDF)</a>
-      <a href="index.html" class="btn" style="background-color:#444;">Back to Home</a>
-    </div>
-  </div>
+    <a href="index.html" class="top-btn">Back to Home</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Towards Robust Evaluation of Unlearning in LLMs via Data Transformations</h2>
+      <p>
+        This research explores methods for evaluating machine unlearning in large language models (LLMs) 
+        through systematic data transformations. The goal is to understand how effectively LLMs can 
+        remove learned information from specific data sources without compromising general performance. 
+        The work proposes a robust evaluation pipeline and benchmarks across multiple unlearning scenarios 
+        to quantify both erasure fidelity and collateral impact.
+      </p>
+      <div class="buttons">
+        <a href="research1.pdf" download class="btn">Download Paper (PDF)</a>
+      </div>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Can LLMs Obfuscate Code? A Systematic Analysis of Large Language Models into Assembly Code Obfuscation</h2>
+      <p>
+        This study investigates whether large language models can perform code obfuscation tasks traditionally 
+        handled by compiler-level transformations. The research analyzes how different model architectures 
+        and prompt strategies influence the generation of obfuscated assembly code, examining the balance 
+        between obfuscation strength, runtime efficiency, and interpretability. Findings highlight both 
+        the potential and current limitations of LLMs in adversarial software generation contexts.
+      </p>
+      <div class="buttons">
+        <a href="research2.pdf" download class="btn">Download Paper (PDF)</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
+
