@@ -85,17 +85,19 @@
       flex: 2;
     }
 
-    .profile-img {
+    .profile-imgs {
       flex: 1;
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 20px;
     }
-
-    .profile-img img {
+    
+    .profile-imgs img {
       width: 280px;
-      height: 280px;
+      height: 350px; /* taller for vertical aspect */
       object-fit: cover;
-      border-radius: 50%;
+      border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
@@ -177,6 +179,7 @@
   </main>
 </body>
 </html>
+
 
 
 
