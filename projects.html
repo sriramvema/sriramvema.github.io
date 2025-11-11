@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sriram Vema | Research</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 100px 8%;
+      background: #f9fafc;
+      color: #222;
+      line-height: 1.7;
+    }
 
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      gap: 1050px; /* space between title and button */
+      padding: 20px 0;
+      background: #f9fafc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #111;
+      margin: 0;
+    }
+
+    .top-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      background-color: #444;
+      transition: background 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .top-btn:hover {
+      background-color: #222;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #333;
+      margin-top: 60px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      margin-bottom: 50px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: white;
+      background-color: #005eff;
+      margin-right: 15px;
+    }
+
+    .btn:hover {
+      background-color: #003fb8;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 40px 0;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 100px 6%;
+      }
+
+      header {
+        gap: 20px;
+      }
+
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .btn {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Personal Projects</h1>
+    <a href="index.html" class="top-btn">Back to Home</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>StudyAI</h2>
+      <p>
+        This project is a React web application that uses retrieval augmented generation (RAG) to pull information from uploaded PDFs. 
+        I used the sentence-transformers/all-MiniLM-L6-v2 model from Huggingface to perform the RAG procedures. 
+        This application's primary use is for students to receive study help in their classes, which is specifically tailored to the material given to them. 
+        Once they upload a PDF of their class notes or textbook, each page is loaded into the RAG function and outputs the relevant pages for whatever the student's question is. 
+        These pages are given to a Claude model as context to answer the user's question. For this project, I used the claude-3-haiku-20240307 model. 
+        I have provided a link in my repository's Readme.md to a small demo I have prepared to show what the application looks like during use.
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/sriramvema/studyAI" class="btn">Repository</a>
+      </div>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>StockAI</h2>
+      <p>
+        This app is a useful tool for people who are beginning to get into the stock market. Beginners might be a little lost when it comes to finding information that could affect stock prices. 
+        I used a webcrawler program that allows the user to search for the top 10 most relevant news articles for any stock on the Nasdaq. 
+        My React app displays these articles along with an AI-generated summary for each article as well as a comprehensive summary for all of the articles together. 
+        For this, I used Claude, and the model also generates an opinion on how this news could affect the price of the stock. 
+        This is very useful for beginners because it will allow them to make informed decisions on whether they should buy or sell their stock.
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/sriramvema/stockAI" class="btn">Repository</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
