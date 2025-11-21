@@ -129,8 +129,8 @@
       <p>
         Building a custom fine-tuned DeepSeek Coder model that accepts raw Python code as input, evaluates its cleanliness, and generates an improved, standards-compliant version. 
         To support this, I constructed a 2,600-example “messy-to-clean” Python code dataset using Claude Haiku to synthetically generate paired samples. Each pair has been validated 
-        to ensure the messy and clean versions are functionally identical. The goal is to train the model to recognize common anti-patterns, detect structural and stylistic issues, 
-        and produce clean, well-organized output aligned with Pythonic best practices.
+        to ensure the messy and clean versions are functionally identical. I am fine-tuning the model using PyTorch to enable it to recognize common anti-patterns, detect structural 
+        and stylistic issues, and produce clean, well-organized output aligned with Pythonic best practices.
       </p>
       <div class="buttons">
         <a href="https://github.com/sriramvema/Code-Standard-Agent" class="btn">Repository</a>
